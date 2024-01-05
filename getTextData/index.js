@@ -12,8 +12,8 @@ const request = async () => {
       postList.append(title);
       postList.append(paragraph);
     });
-  } catch {
-    (err) => console.log("Произошла ошибка", err);
+  } catch (err) {
+    console.log("Произошла ошибка", err);
   }
 };
 getButton.addEventListener("click", request);
